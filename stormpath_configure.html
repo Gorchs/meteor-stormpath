@@ -1,0 +1,20 @@
+<template name="configureLoginServiceDialogForStormpath">
+  <p>
+    First, you'll need to get a Stormpath tenant account and associated API Key & API Secret. Follow these steps:
+  </p>
+  <ol>
+    <li>
+      Login to Stormpath.com and go to https://docs.stormpath.com/rest/product-guide/latest/setup.html#set-up to learn about how to register your application and get a API_Key and API_secret.
+    </li>
+    <li>
+      Set the Consumer name to the name of your application.
+    </li>
+    <li>
+      Optionally set the URL field to the URL of your
+      website.  You can leave this blank.
+    </li>
+    <li>
+      Set the <b>Redirect URI(s)</b> to: <span class="url">{{siteUrl}}</span>  (Do not append a path to this URL.)
+    </li>
+  </ol>
+</template>
