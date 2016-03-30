@@ -54,7 +54,12 @@ Stormpath.requestCredential = function(options, credentialRequestCompleteCallbac
     '&client_id=' + config.clientId +
     '&state=' + OAuth._stateParam(loginStyle, credentialToken);*/
 
-    const loginUrl = 'https://api.stormpath.com/v1/applications/'+ config.AppId +'/authTokens/';
+    var loginUrl =
+        //'https://api.stormpath.com/v1/applications/'+ config.Application +'/oauth/token'+
+        'http://requestb.in/15mgufz1?'+
+        'grant_type=password' +
+        '&username='+"batman"+
+        '&password='+"Aa12345678";
 
 
   /**
